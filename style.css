@@ -190,4 +190,16 @@ article.blog {
   .working-on h2 {
     text-align: center;
   }
+
+  h1,h2,h3,h4 {
+    text-align: center;
+  }
+
+  .blog-post-date {
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
 }
