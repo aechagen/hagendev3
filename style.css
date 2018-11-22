@@ -1,0 +1,193 @@
+/* 
+Theme Name: HagenDev
+Description: A pretty basic blog theme
+Version: 1.0
+Author: Casey Hagen
+Author URI: http://hagendev.com
+*/
+
+/* Defining VARIABLES. Variables. Without SCSS! */
+
+:root {
+  --header-color: #0C5F8B;
+  --main-color: #ffffff;
+  --accent-color: #2597D0;
+  --main-background: #272727;
+}
+
+
+
+/* Base styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--main-background);
+  color: #fff;
+  font-family: 'Ledger', serif;
+  margin-bottom: 35px; /* For the footer spacing */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Crete Round', serif;
+  color: var(--header-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper > div {
+  width: 50%;
+  padding: 10px;
+}
+
+.wrapper > div:first-child {
+  margin-right: 20px;
+}
+
+.spacer {
+  height: 25px;
+}
+
+.hero-header {
+  font-size: 4rem;
+}
+
+/* Navigation.. Stupid flexbox.  */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 0.7em;
+  transition: background-color .3s, color .3s;
+}
+
+a:hover {
+  color: #fff;
+  transition: background-color .3s, color .3s;
+}
+
+/* Blog styles */
+
+article#blog-post {
+  border-top: 1px solid #fff;
+}
+
+.blog-date {
+  color: #d3d3d3;
+  font-size: 0.9em;
+}
+
+.container-blog-post {
+  max-width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h1.blog-post-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.blog-post-date {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+/* Footer Styles */
+
+footer {
+  display: block;
+  background: #272727;
+  opacity: 0.85;
+  text-align: center;
+  position: fixed;
+  padding: 0.75rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0.3em;
+}
+
+/* Page: About Styles */
+
+article.blog {
+  margin: 0 auto;
+}
+
+.profile-photo {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Responsive Stuff */
+
+@media (max-width: 576px) {  /* Hits 576px and below, does these */
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .wrapper > div {
+    width: 100%;
+  }
+
+  .working-on h2 {
+    text-align: center;
+  }
+}
