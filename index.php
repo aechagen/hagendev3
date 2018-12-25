@@ -4,13 +4,10 @@
     <h1 class="hero-header text-center">HagenDev</h1>
   <div class="wrapper"> <!-- Has the flex -->
     <div class="col working-on">
-      <h1>What I'm currently working on:</h1>
-      <span class="blog-date">(Week 3 November 2018)</span>
+      <h1>Goals for January 2019</h1>
       <ul>
-        <li><s>Making this website from scratch with WordPress</s></li>
-        <li>Continuing the <a href="https://twitter.com/aechagen" target="_blank">#100DaysOfCode</a> challenge</li>
-        <li>Finish <a href="https://www.goodreads.com/aechagen" target="_blank">The Alchemist</a> by December</li>
-        <li>Blog post once per week</li>
+        <li>You did a vlog on Christmas Day and enjoyed it.. Pursue that.</li>
+        <li>Actually try and get some OJT in with Respiratory. Your package relies on it.</li>
       </ul>
     </div> <!-- .working-on -->
     
